@@ -8,9 +8,20 @@
     .container{
      display: grid;
      grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(3,200px) 50px 50px;
+     gap: 20px;
         }
     .box{
         background-color: grey;
+    }
+    #box-1{
+        grid-row: span 5;
+    }
+    #box-11,#box-12{
+        grid-column: span 3;
+    }
+    #box-6,#box-7,#box-9,#box-10{
+         background-color: #e61c1cb8;
     }
     </style>
 </head>
